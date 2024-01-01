@@ -1,0 +1,82 @@
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 5.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__bar {
+  padding: 1rem 0;
+  width: 63rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__left {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2rem;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  background: url(../images/logo-long-white.svg);
+  background-size: cover;
+  aspect-ratio: 3800/500;
+  margin-bottom: 0.8rem;
+  width: 13rem;
+}
+
+.nav__link {
+  font-family: "Chivo", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding-top: 0.7rem;
+  padding-inline: 0;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid #fff !important;
+}
+
+.nav__dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__btn {
+  display: flex;
+  font-family: "Chivo", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.25rem;
+  padding-inline: 0;
+  background: none;
+  border: none;
+  gap: 0.2rem;
+}
+
+.nav__btn img {
+  padding-top: 0.15rem;
+}
+
+.nav__btn:hover {
+  border-bottom: 2px solid #fff !important;
+}
