@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Tiempos Headline";
+  src: url(../fonts/tiempos-headline.otf) format("opentype");
+}
+
+main {
+  padding: 3.5rem 7.5rem;
+}
+
+.main__container--eicMsg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main__eicMsg {
+  display: flex;
+  justify-content: space-between;
+  width: 63rem;
+  column-gap: 2rem;
+}
+
+.main__eicMsg blockquote {
+  width: 23rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main__eicMsg blockquote p:first-of-type {
+  margin-bottom: 1.5rem;
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.main__eicMsg blockquote p:nth-of-type(2) {
+  font-family: "Tiempos Headline", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1c4480;
+  line-height: 130%;
+}
+
+.main__iframe {
+  aspect-ratio: 16/9;
+}
