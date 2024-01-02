@@ -1,55 +1,42 @@
 @font-face {
-  font-family: "Freight";
-  src: url(../fonts/freight.otf) format("opentype");
-}
-
-@font-face {
   font-family: "Tiempos Headline";
   src: url(../fonts/tiempos-headline.otf) format("opentype");
 }
 
-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.header__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 1;
-  filter: brightness(0.4);
-}
-
-.header__hero {
-  position: relative;
+footer {
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
-  text-align: center;
   align-items: center;
+  justify-content: flex-end;
+  height: 24rem;
+  width: 100%;
+  gap: 2.5rem;
 }
 
-.header__hero h1 {
+footer img {
+  position: absolute;
+  background-size: cover;
+  filter: brightness(0.4);
+  z-index: -1;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2.5rem;
+}
+
+.footer__block h2 {
   font-family: "Tiempos Headline", sans-serif;
-  font-size: 5.9rem;
-  line-height: 0.8;
-  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
   color: #fff;
 }
 
-.header__text p {
-  font-family: "Chivo", sans-serif;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.header__btn button {
+.footer__btn button {
   aspect-ratio: 3;
   font-size: 0.875rem;
   width: 7rem;
@@ -58,4 +45,12 @@ header {
   border: none;
   border-radius: 4px;
   font-weight: 700;
+}
+
+.footer__credits {
+  font-family: "Chivo", sans-serif;
+  padding: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #fff;
 }
