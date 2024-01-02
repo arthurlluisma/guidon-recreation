@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The GUIDON RecWeek 2023 (Recreation)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chivo&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/global.css" />
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/header.js"></script>
   </head>
-  <body>
-    <nav class="container">
+  <body onscroll="toggleNav()" onload="setInterval(changeHeaderBg, 5000)">
+    <nav id="js-nav" class="container">
       <div class="nav__bar">
         <div class="nav__left">
           <a class="nav__logo" href="#"></a>
@@ -31,10 +34,26 @@
             </button>
           </div>
         </div>
+        <div id="js-nav__right" class="nav__right">
+          <a
+            class="nav__btn--apply"
+            href="https://forms.gle/HQjvPJsTt9iZJBMT6"
+            data-disabled="false"
+            target="_blank"
+          >
+            <button>APPLY NOW</button>
+          </a>
+        </div>
       </div>
     </nav>
-    <header class="container">
-      <img class="header__bg" src="images/bg0.jpg" alt="" />
+    <header id="js-header" class="container">
+      <div class="header__filter"></div>
+      <img class="header__bg" src="images/bg0.jpg" alt="" style="opacity: 1" />
+      <img class="header__bg" src="images/bg1.jpg" alt="" />
+      <img class="header__bg" src="images/bg2.jpg" alt="" />
+      <img class="header__bg" src="images/bg3.jpg" alt="" />
+      <img class="header__bg" src="images/bg4.jpg" alt="" />
+      <img class="header__bg" src="images/bg5.jpg" alt="" />
       <div class="header__hero">
         <h1>Stand with the Truth.</h1>
         <div class="header__text">

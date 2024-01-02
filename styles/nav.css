@@ -82,3 +82,18 @@ a {
 .nav__btn:hover {
   border-bottom: 2px solid #fff !important;
 }
+
+.nav__right {
+  display: none;
+}
+
+.nav__btn--apply button {
+  aspect-ratio: 3;
+  font-size: 0.875rem;
+  width: 7rem;
+  font-family: "Chivo", sans-serif;
+  color: #1c4480;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
