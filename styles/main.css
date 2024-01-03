@@ -176,6 +176,6 @@ main {
   .main__eicMsg blockquote {
     margin: 0 auto;
     padding-bottom: 2rem;
-    text-align: justify;
+    text-align: center;
   }
 }
