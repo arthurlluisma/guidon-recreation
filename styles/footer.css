@@ -15,7 +15,7 @@ footer {
 
 footer img {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 24rem;
   background-size: cover;
   object-fit: cover;
@@ -29,6 +29,7 @@ footer img {
   align-items: center;
   justify-content: center;
   row-gap: 2.5rem;
+  padding: 0.2rem;
 }
 
 .footer__block h2 {
@@ -41,8 +42,8 @@ footer img {
 
 .footer__btn button {
   aspect-ratio: 3;
-  font-size: 0.875rem;
-  width: 7rem;
+  font-size: 0.75rem;
+  width: 5.5rem;
   font-family: "Chivo", sans-serif;
   color: #1c4480;
   border: none;
@@ -58,7 +59,18 @@ footer img {
   color: #fff;
 }
 
-@media (max-width: 570px) {
+@media (min-width: 700px) {
+  footer img {
+    background-position: 0;
+  }
+
+  .footer__btn button {
+    font-size: 0.875rem;
+    width: 7rem;
+  }
+}
+
+/* @media (max-width: 570px) {
   .footer__block h2 {
     font-size: 1.5rem;
   }
@@ -76,4 +88,4 @@ footer img {
   .footer__credits {
     font-size: 0.55rem;
   }
-}
+} */

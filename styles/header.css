@@ -32,6 +32,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-size: cover;
   object-fit: cover;
   opacity: 0;
   transition: 3s all;
@@ -40,31 +41,31 @@ header {
 
 .header__hero {
   position: relative;
+  width: 20rem;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 1rem;
   text-align: center;
   align-items: center;
 }
 
 .header__hero h1 {
   font-family: "Tiempos Headline", sans-serif;
-  font-size: 5.9rem;
-  line-height: 0.8;
+  font-size: 2.5rem;
   padding-top: 2rem;
   color: #fff;
 }
 
 .header__text p {
-  font-family: "Chivo", sans-serif;
-  font-size: 1rem;
+  font-family: "Tiempos Headline", sans-serif;
+  font-size: 0.875rem;
   color: #fff;
 }
 
 .header__btn button {
   aspect-ratio: 3;
-  font-size: 0.875rem;
-  width: 7rem;
+  font-size: 0.75rem;
+  width: 5.5rem;
   font-family: "Chivo", sans-serif;
   color: #1c4480;
   border: none;
@@ -72,7 +73,40 @@ header {
   font-weight: 700;
 }
 
-@media (max-width: 1019px) {
+@media (min-width: 700px) {
+  .header__hero {
+    row-gap: 1.5rem;
+    width: 41.5rem;
+  }
+
+  .header__hero h1 {
+    font-size: 4.5rem;
+    line-height: 0.9;
+  }
+
+  .header__text p {
+    font-size: 1rem;
+    font-family: "Chivo", sans-serif;
+  }
+
+  .header__btn button {
+    font-size: 0.875rem;
+    width: 7rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .header__hero {
+    row-gap: 2rem;
+    width: 68rem;
+  }
+
+  .header__hero h1 {
+    font-size: 6rem;
+  }
+}
+
+/* @media (max-width: 1019px) {
   .header__hero h1 {
     font-size: 5.3rem;
   }
@@ -130,4 +164,4 @@ header {
   .header__text p {
     font-size: 0.77rem;
   }
-}
+} */
