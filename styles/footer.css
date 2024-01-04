@@ -69,23 +69,3 @@ footer img {
     width: 7rem;
   }
 }
-
-/* @media (max-width: 570px) {
-  .footer__block h2 {
-    font-size: 1.5rem;
-  }
-
-  .footer__credits {
-    font-size: 0.6rem;
-  }
-}
-
-@media (max-width: 490px) {
-  .footer__block h2 {
-    font-size: 1.25rem;
-  }
-
-  .footer__credits {
-    font-size: 0.55rem;
-  }
-} */
